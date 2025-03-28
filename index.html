@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de imágenes</title>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .image-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copy-button, .copy-all-button {
+            display: block;
+            padding: 5px;
+            margin-top: 40px;
+            border: 0px;
+            background-color: rgb(231, 245, 220);
+            color: rgb(118, 137, 69);
+        }
+
+        .copy-button:hover, .copy-all-button:hover {
+            display: block;
+            padding: 10px;
+            background-color: rgb(118, 137, 69);
+            color: rgb(231, 245, 220);
+        }
+
+        .copy-all-button {
+            font-size: 1.3rem;
+            margin: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-grid">
+        <div class="image-container">
+            <img class="image" src="./plan_elije_8.png" alt="Imagen 1" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_estable.png" alt="Imagen 2" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_estable_100.png" alt="Imagen 3" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_online.png" alt="Imagen 4" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_me_quedo.png" alt="Imagen 5" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_especial.png" alt="Imagen 6" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_estable_verde.png" alt="Imagen 7" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_ahorro_inteligente.png" alt="Imagen 8" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_mas_ahorro.png" alt="Imagen 9" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_ahorro_inteligente_100.png" alt="Imagen 9.2" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_ahorro_flexible_100.png" alt="Imagen 9.3" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_ahorro_automatico_100.png" alt="Imagen 9.3" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_online_alquiler.png" alt="Imagen 10" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_online_autonomos.png" alt="Imagen 11" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_online_teletrabajo.png" alt="Imagen 12" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_ahorro_inteligente_aerotermia.png" alt="Imagen 13" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_online_3_periodos.png" alt="Imagen 14" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_invierno.png" alt="Imagen 15" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_restauracion.png" alt="Imagen 16" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_noche.png" alt="Imagen 17" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_vehiculo_electrico.png" alt="Imagen 18" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_3_periodos.png" alt="Imagen 19" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_comercio.png" alt="Imagen 20" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_verano.png" alt="Imagen 21" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_familias.png" alt="Imagen 22" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_solar.png" alt="Imagen 23" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_ahorro_solar.png" alt="Imagen 23" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+        <div class="image-container">
+            <img class="image" src="./plan_dual.png" alt="Imagen 23" />
+            <button class="copy-button" onclick="copyImageURL(this.previousElementSibling.src)">
+                Copiar URL
+            </button>
+        </div>
+    </div>
+
+    <!-- Botón para copiar todas las URLs -->
+    <button class="copy-all-button" onclick="copyAllImageURLs()">Copiar todas las URLs</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <script>
+
+        function copyImageURL(url) {
+            // const url = this.previousElementSibling.src;
+            const el = document.createElement('textarea');
+            el.value = url;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('URL copiada al portapapeles: ' + url);
+        }
+
+        function copyAllImageURLs() {
+            const imageContainers = document.querySelectorAll('.image-container');
+            const urls = [];
+
+            imageContainers.forEach((container) => {
+                const image = container.querySelector('img');
+                urls.push(image.src);
+            });
+
+            if (urls.length > 0) {
+                const el = document.createElement('textarea');
+                el.value = urls.join('\n');
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                alert('URLs de imágenes copiadas al portapapeles: ' + urls.length);
+            } else {
+                alert('No se encontraron imágenes para copiar.');
+            }
+        }
+    </script>
+</body>
+
+</html>
